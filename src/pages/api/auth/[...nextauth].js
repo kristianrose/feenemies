@@ -7,14 +7,14 @@ export const authOptions = {
 	secret: process.env.NEXTAUTH_SECRET,
 	providers: [
 		GithubProvider({
-			clientId: String(process.env.GITHUB_CLIENT_ID),
-			clientSecret: String(process.env.GITHUB_CLIENT_SECRET),
+			clientId: "68f336391e03f2fd5a8d",
+			clientSecret: "63fb902b2dadadc585d7ebd45f78a2e655e9b204",
 			authorization: {
 				params: {
 					scope: 'user gist'
 				}
 			},
-			callbackUrl: process.env.GITHUB_NEXTAUTH_URL
+			callbackUrl: "https://feenemies-two.vercel.app/home"
 		})
 		// GoogleProvider({
 		// 	clientId: process.env.GOOGLE_CLIENT_ID,
